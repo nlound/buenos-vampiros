@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <title>Buenos Vampiros</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/ubicacion.css">
+</head>
+
+<body>
+  <div class="aviso-mobile">
+    <p>Este sitio web está optimizado para visualización en desktop. Para una mejor experiencia, te recomendamos usar
+      una computadora.</p>
+  </div>
+
+  <nav>
+    <img src="img/logo-home.png" class="nav-logo">
+    <ul>
+      <li class="nav-link-cuenta"><a href="index.html">Cuenta regresiva</a></li>
+      <li class="nav-link-formulario"><a href="formulario.html">Formulario de preventa</a></li>
+      <li class="nav-link-ubicacion nav-link-selected"><a href="ubicacion.html">Revelado de Ubicación</a></li>
+      <li class="nav-link-pregunta"><a href="pregunta.html">Pregunta secreta</a></li>
+      <li class="nav-link-transmision"><a href="transmision.html">Transmisión</a></li>
+    </ul>
+  </nav>
+
+  <header class="fade-in">
+    <div class="wrapper-head_up"></div>
+    <div class="wrapper-head_down"></div>
+  </header>
+
+  <section>
+    <div class="ubicacion-wrapper">
+
+      <div class="ubicacion-column ubicacion-column__left">
+        <p class="ubicacion-pregunta">¿Qué sentís cuando escuchás estos primeros acordes de nuestro nuevo disco?</p>
+
+        <div class="ubicacion-sociales">
+          <iframe style="border-radius:12px; margin-bottom: 8px;"
+            src="https://open.spotify.com/embed/track/5A8yYhRzFxyTBL0MJK3IAy?utm_source=generator" width="100%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="ubicacion-x">
+            <textarea type="text" class="ubicacion-text" placeholder="Escribe tu respuesta"></textarea>
+            <a role="button" class="ubicacion-button" href="https://x.com/intent/post?hashtags=BuenosVampiros" target="_blank">Enviar</a>
+          </div>
+          <div class="ubicacion-respuestas">
+            <div class="profile">
+              <div class="profile-left"><img src="img/profiles/profile-1.png"></div>
+              <div class="profile-right">
+                <p class="profile-name">vampiromariano</p>
+                <p class="profile-handler">@marianmarianmarian</p>
+                <p class="profile-message">como si Robert Smith fuese marplatense, joven y estuviese bajón por la
+                  hiperinflación #BuenosVampiros</p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="profile-left"><img src="img/profiles/profile-2.png"></div>
+              <div class="profile-right">
+                <p class="profile-name">Romi Taylor’s Version</p>
+                <p class="profile-handler">@alltoowell_95romi</p>
+                <p class="profile-message">siento que ya quiero estar con una birrita y las chicas en la fecha de
+                  Uniclub 😛 #BuenosVampiros</p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="profile-left"><img src="img/profiles/profile-3.png"></div>
+              <div class="profile-right">
+                <p class="profile-name">DRAMA KWEEN 🖤</p>
+                <p class="profile-handler">@mychemmydrug</p>
+                <p class="profile-message">como si me estuviese hundiendo en el agua, pero pacífico, no trágico ah (?
+                  #BuenosVampiros</p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="profile-left"><img src="img/profiles/profile-4.png"></div>
+              <div class="profile-right">
+                <p class="profile-name">Karma Paliza</p>
+                <p class="profile-handler">@belalugosiisdead</p>
+                <p class="profile-message">Unas re ganas de volver a verlos en vivoooo!!! #BuenosVampiros</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="ubicacion-column ubicacion-column__right">
+        <p class="ubicacion-pista">500 tweets = QR la ubicación de ese tesoro que estás buscando</p>
+        <div class="ubicacion-qr" id="qr"></div>
+        <div class="ubicacion-hashtag">
+          <a href="https://twitter.com/intent/tweet?button_hashtag=BuenosVampiros" class="twitter-hashtag-button"
+            data-show-count="false">Post #BuenosVampiros</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="js/ubicacion.js"></script>
+<script src="js/qr.js"></script>
+
+</html>

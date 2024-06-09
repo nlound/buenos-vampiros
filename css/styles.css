@@ -1,0 +1,77 @@
+body {
+  background-size: auto;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  justify-content: space-around;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li {
+  padding: 10px 15px;
+}
+
+nav ul li a {
+  color: var(--black);
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--white);
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+.nav-link-cuenta {
+  background-color: var(--gray);
+  -webkit-clip-path: polygon(0% 5%, 98% 10%, 100% 100%, 5% 90%);
+  clip-path: polygon(0% 5%, 98% 10%, 100% 100%, 5% 90%);
+}
+
+.nav-link-formulario {
+  background-color: var(--gray);
+  -webkit-clip-path: (0% 0%, 98% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 98% 0%, 100% 90%, 0% 100%);
+}
+
+.nav-link-ubicacion {
+  background-color: var(--gray);
+  -webkit-clip-path: polygon(0% 0%, 100% 10%, 93% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 10%, 93% 100%, 0% 90%);
+}
+
+.nav-link-pregunta {
+  background-color: var(--gray);
+  -webkit-clip-path: polygon(1% 0%, 100% 0%, 95% 100%, 0% 90%);
+  clip-path: polygon(1% 0%, 100% 0%, 95% 100%, 0% 90%);
+}
+
+.nav-link-transmision {
+  background-color: var(--gray);
+  -webkit-clip-path: polygon(0% 5%, 100% 10%, 100% 100%, 5% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 10% 100%);
+}
+
+.nav-link-selected {
+  pointer-events: none;
+  background-color: var(--blue);
+}
+
+.nav-link-selected a {
+  color: var(--white);
+}

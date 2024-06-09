@@ -1,0 +1,108 @@
+body {
+  background-image: url("../img/backgrounds/cuenta.jpg");
+}
+
+.nav-link-selected{ 
+  background-color: var(--blue);
+}
+
+.nav-link-selected a {
+  color: var(--white);
+}
+
+.wrapper-head_up{
+  background-image: url(../img/heads/cuenta-regresiva-arriba.png);
+}
+
+.wrapper-head_down{
+  background-image: url(../img/heads/cuenta-regresiva-abajo.png);
+}
+
+section {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-wrapper {
+  background-color: var(--black);
+}
+
+.countdown-envelope{
+  position: absolute;
+  transform-origin: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.countdown-reel{
+  position: absolute;
+  transform-origin: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.countdown-container{
+  position:relative;
+  display:flex;
+  background-color: var(--black);
+  width: 450px;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+
+.countdown-reel{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%); 
+}
+
+.countdown-visor{
+  width: 128px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.countdown-number{
+  width: 128px;
+  height: calc(130px*10);
+  background-image: url("../img/numeros.jpg");
+  background-position: 0% 0%;
+  background-repeat: repeat-y;
+  position: relative;
+}
+
+.countdown-number:after{
+  content: "";
+  position: absolute;
+  top:-260px;
+  left: 0px;
+  height: 260px;
+  width: 128px;
+  background-image: url("../img/numeros.jpg");
+  background-position: 0% 100%;
+  background-repeat: repeat-y;
+}
+
+.countdown-number:before{
+  content: "";
+  position: absolute;
+  top: calc(130px*10);
+  left: 0px;
+  height: 130px;
+  width: 128px;
+  background-image: url("../img/numeros.jpg");
+  background-position: 0% 0%;
+  background-repeat: repeat-y;
+}
+
+
+.countdown-logo{
+  position: absolute;
+   bottom: 20px;  
+}

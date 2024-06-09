@@ -1,0 +1,117 @@
+body {
+  background-image: url("../img/backgrounds/formulario.jpg");
+}
+
+.nav-link-selected {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.nav-link-selected a {
+  color: var(--black);
+}
+
+.wrapper-head_up {
+  background-image: url(../img/heads/formulario-arriba.png);
+}
+
+.wrapper-head_down {
+  background-image: url(../img/heads/formulario-abajo.png);
+}
+
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden
+}
+
+.formulario-logo {
+  align-self: center;
+  margin-top: 100px;
+}
+
+.formulario-wrapper {
+  position: relative;
+  height: 100%;
+  align-self: center;
+  align-content: center;
+  top: -50px;
+}
+
+.formulario-envelope {
+  position: absolute;
+  transform-origin: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formulario-pregunta {
+  position: relative;
+  width: 300px;
+  transform: translateY(-60%) rotate(-3deg);
+  color: var(--white);
+}
+
+.formulario-campos {
+  position: absolute;
+  transform: translate(-50%, 40%);
+  white-space: nowrap;
+}
+
+.formulario-seccion {
+  color: var(--white);
+  margin-bottom: 20px;
+  width: 300px;
+  display: flex;
+  word-break: keep-all;
+}
+
+.formulario-input {
+  width: 100%;
+  background-color: transparent;
+  color: var(--white);
+  font-family: inherit;
+  border: none;
+  border-bottom: 2px solid var(--white);
+}
+
+.formulario-input:focus {
+  outline: none;
+}
+
+.formulario-submit {
+  width: 100%;
+  background-color: var(--violet);
+  color: var(--white);
+  font-family: inherit;
+  border: none;
+  border: 2px solid var(--white);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.modal-wrapper{
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-show{
+  display: flex;
+}
+
+.modal-dialog{
+  max-width: 400px;
+  background-color: var(--green);
+  padding: 40px;
+  -webkit-clip-path: polygon(2% 10%, 100% 23%, 100% 90%, 0% 100%);
+  clip-path: polygon(2% 10%, 100% 23%, 100% 90%, 0% 100%);
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-image: url("../img/backgrounds/pregunta.jpg");
+}
+
+.fuente-retro {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--violet-light);
+
+}
+
+.nav-link-selected {
+  background-color: var(--blue);
+}
+
+.wrapper-head_up {
+  background-image: url(../img/heads/pregunta-arriba.png);
+}
+
+.wrapper-head_down {
+  background-image: url(../img/heads/pregunta-abajo.png);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pregunta {
+  width: 630px;
+  height: 350px;
+  background: url(../img/monitor.png) 50% 50% no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  color: var(--violet-light);
+  text-align: center;
+}
+
+.pregunta-texto{
+  font-size: 30px;
+  text-shadow: var(--violet) 0px 0px 10px;
+}
+
+.pregunta-input{
+  border: 6px solid var(--violet-light);
+  font-size: 30px;
+  background-color: transparent;
+  text-shadow: var(--violet) 0px 0px 10px;
+  padding: 10px 20px;
+  width: 80%;
+  margin-bottom: 30px;
+  border-radius: 5px
+}
+
+.pregunta-input:focus {
+  outline: none;
+}
+
+.pregunta-button{
+  font-size: 30px;
+  border: 0px;
+  background-color: transparent;
+  text-shadow: var(--violet) 0px 0px 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 6px solid var(--violet-light);
+  border-radius: 10px
+}
+
+.pregunta-button-modal{
+  font-size: 20px;
+}
+
+.pregunta-button:hover{
+  background-color: var(--blue);
+}
+
+.modal-wrapper {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 667px;
+  height: 310px;
+  background-color: rgba(0,0,0,0.95) ;
+  display: none;
+  color: var(--violet-light);
+  text-shadow: var(--violet) 0px 0px 10px;
+}
+
+.modal-dialog{
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal-show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.respuesta-show{
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}

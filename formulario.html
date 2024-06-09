@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <title>Buenos Vampiros</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+  <div class="aviso-mobile">
+    <p>Este sitio web está optimizado para visualización en desktop. Para una mejor experiencia, te recomendamos usar una computadora.</p>
+  </div>
+
+  <nav>
+    <img src="img/logo-home.png" class="nav-logo">
+    <ul>
+      <li class="nav-link-cuenta"><a href="index.html">Cuenta regresiva</a></li>
+      <li class="nav-link-formulario nav-link-selected"><a href="formulario.html">Formulario de preventa</a></li>
+      <li class="nav-link-ubicacion"><a href="ubicacion.html">Revelado de Ubicación</a></li>
+      <li class="nav-link-pregunta"><a href="pregunta.html">Pregunta secreta</a></li>
+      <li class="nav-link-transmision"><a href="transmision.html">Transmisión</a></li>
+    </ul>
+  </nav>
+
+  <header class="fade-in">
+    <div class="wrapper-head_up"></div>
+    <div class="wrapper-head_down"></div>
+  </header>
+
+  <section>
+    <img src="img/title-formulario.png" class="formulario-logo" alt="">
+    
+    <div class="formulario-wrapper">
+      <img src="img/mail-2.png" class="formulario-envelope" id="envelope-2" alt="">
+      <img src="img/mail-3.png" class="formulario-envelope" id="envelope-3" alt="">
+      <img src="img/envelope-tab.png" class="formulario-envelope" id="envelope-tab" alt="">
+      <div id="envelope-card" class="formulario-envelope">
+        <img src="img/envelope-card.png" alt="" class="formulario-envelope">
+        <p class="formulario-pregunta">Completá el formulario para participar de la preventa de nuestro primer disco, y
+          una sorpresa para nuestros verdaderos fans...</p>
+      </div>
+      <img src="img/envelope.png" class="formulario-envelope" id="envelope" alt="">
+
+      <div class="formulario-campos">
+
+        <form>
+          <div class="formulario-seccion">
+            <label for="nombre-vb">nombre:</label>
+            <input class="formulario-input" type="text" id="nombre-vb" name="nombre" required>
+          </div>
+          <div class="formulario-seccion">
+            <label for="email-vb">e-mail:</label>
+            <input class="formulario-input" type="email" id="email-vb" name="email" required>
+          </div>
+
+          <div class="formulario-seccion"></div>
+          <button id="boton-enviar" class="formulario-submit" value="Enviar">Button</button>
+        </form>
+      </div>
+
+      
+    </div>
+    <div id="modal" class="modal-wrapper">
+      <div class="modal-dialog" role="modal-dialog">
+        <h1>¡Datos recibidos!</h1>
+        <p>En breve vas a estar recibiendo un mail con un regalo excusivo</p>
+        <button id="boton-cerrar" class="formulario-submit" type="button" role="btn-close">cerrar</button>
+        </div>
+    </div>
+  </section>
+
+</body>
+<script src="js/formulario.js"></script>
+
+</html>

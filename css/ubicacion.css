@@ -1,0 +1,196 @@
+body {
+  background-image: url("../img/backgrounds/ubicacion.jpg");
+}
+
+.nav-link-selected {
+  background-color: var(--magenta);
+}
+
+.nav-link-selected a {
+  color: var(--black);
+}
+
+.wrapper-head_up {
+  background-image: url(../img/heads/ubicacion-arriba.png);
+}
+
+.wrapper-head_down {
+  background-image: url(../img/heads/ubicacion-abajo.png);
+  z-index: 2;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.ubicacion-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.ubicacion-pregunta {
+  padding: 20px 20px 20px 15%;
+  font-size: 20px;
+  text-align: right;
+  border: 2px solid var(--white)
+}
+
+.ubicacion-sociales {
+  background-image: url(../img/carta.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 10px 0 15%;
+}
+
+.ubicacion-column {
+  width: 50%;
+  color: var(--white);
+  align-self: flex-end;
+  padding-top: 100px;
+}
+
+.ubicacion-column__right {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ubicacion-x,
+.ubicacion-respuestas {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: var(--black);
+  color: var(--vhite);
+}
+
+.ubicacion-x {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.ubicacion-respuestas {
+  border-radius: 20px 20px 0 0;
+}
+
+.ubicacion-text {
+  border: none;
+  border-bottom: 2px solid var(--gray-dark);
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 0px;
+  background-color: var(--black);
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.ubicacion-text:focus {
+  outline: none;
+}
+
+.ubicacion-button {
+  background-color: var(--social);
+  border: 0;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: var(--white);
+  align-self: end;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile:not(:last-child) {
+  border-bottom: 2px solid var(--gray-dark);
+}
+
+.profile-left,
+.profile-right {
+  margin: 0;
+  padding: 10px;
+}
+
+.profile-name {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-handler {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.profile-message {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.ubicacion-pista {
+  font-size: 24px;
+  text-align: center;
+  padding: 0 14%;
+}
+
+.ubicacion-qr {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.ubicacion-qr p {
+  font-size: 9px;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  width: 260px;
+}
+
+.line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 110px;
+  transform: scale(0);
+  border: 5px solid var(--blue);
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.square-full {
+  background-color: var(--white);
+}
+
+.square-empty {
+  background-color: transparent;
+}
+
+.show {
+  transition: all 250ms;
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 0px;
+  border: 0px solid var(--blue);
+}
